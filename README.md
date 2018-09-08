@@ -3,7 +3,7 @@
 [![npm version](https://badge.fury.io/js/%40iiddoo%2Faim-password-retrieve.svg)](https://badge.fury.io/js/%40iiddoo%2Faim-password-retrieve)
 
 # aim-password-retrieve
-Retrieve password from CyberArk vault object with AIM client
+Retrieve password for user
 
 ## Installation
 

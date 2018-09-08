@@ -1,7 +1,7 @@
 'use strict';
 
 /**
- * Get user password from vault 
+ * Get user password 
  * @param {string} user
  * @return {string}
  */
