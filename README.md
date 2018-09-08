@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/iiddoo/aim-password-retrieve.svg?branch=master)](https://travis-ci.org/iiddoo/aim-password-retrieve)
+
 # aim-password-retrieve
 Retrieve password from CyberArk vault object with AIM client
 
