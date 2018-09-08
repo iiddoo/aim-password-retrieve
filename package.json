@@ -1,0 +1,25 @@
+{
+  "name": "@iiddoo/aim-password-retrieve",
+  "version": "0.1.0",
+  "description": "Retrieve password from CyberArk vault object with AIM client",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iiddoo/aim-password-retrieve.git"
+  },
+  "author": "“Ido <“iiddoolleevv@gmail.com”>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/iiddoo/aim-password-retrieve/issues"
+  },
+  "engines": {
+    "node": ">=8.11.4"
+  },
+  "homepage": "https://github.com/iiddoo/aim-password-retrieve#readme",
+  "devDependencies": {
+    "mocha": "^5.2.0"
+  }
+}
