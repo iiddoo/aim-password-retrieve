@@ -3,7 +3,7 @@ const { expect } = require('chai');
 
 describe('Index', ()=> {
     it('Should throw error', done => {
-        expect(async ()=> {
+        expect(async () => {
             try {
                 index('error');
             } catch (error) {}
