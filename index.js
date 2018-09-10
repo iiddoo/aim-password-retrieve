@@ -32,8 +32,6 @@ module.exports =  (user, appID, safe) => {
             // execute shell command with parameters
             // validate result
             resolve('password');
-        } catch (error) {
-            reject(error);
-        }
+        } catch (error) { reject(error); }
     });
 };
