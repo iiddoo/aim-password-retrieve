@@ -17,10 +17,10 @@ module.exports = {
     },
     testPlatform: {
         path: './test.exe',
-        command: ''
+        command: 'sh test.sh'
     },
     linux: {
-        path: './index.js',
-        command: ''
+        path: './test.sh',
+        command: 'sh test.sh'
     }
 };

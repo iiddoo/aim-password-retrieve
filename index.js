@@ -31,7 +31,6 @@ module.exports = (user, appID, safe) => {
             validateExe();
             // set command string
             const cmd = command(user, appID, safe);
-            console.log(cmd);
             // execute shell command
             execute(cmd)
             .then((password) => {
