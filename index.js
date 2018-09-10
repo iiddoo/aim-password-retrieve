@@ -18,26 +18,22 @@ const execute = require('./lib/execute');
 
 module.exports = (user, appID, safe) => {
     return new Promise((resolve, reject) => {
-        try {
-            // validate user input
-            validateUser(user);
-            // validate appID input
-            validateAppID(appID);
-            // validate safe input
-            validateSafe(safe);
-            // validate platform
-            validatePlatform();
-            // validate executable file
-            validateExe();
-            // set command string
-            const cmd = command(user, appID, safe);
-            // execute shell command
-            const password = execute(cmd);
-            // return result
-            resolve(password); 
-        } catch (error) { 
-            reject(error);
-        }
+        // validate user input
+        validateUser(user);
+        // validate appID input
+        validateAppID(appID);
+        // validate safe input
+        validateSafe(safe);
+        // validate platform
+        validatePlatform();
+        // validate executable file
+        validateExe();
+        // set command string
+        const cmd = command(user, appID, safe);
+        // execute shell command
+        const password = execute(cmd);
+        // return result
+        resolve(password); 
     });
 };  
 
