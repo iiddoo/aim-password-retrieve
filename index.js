@@ -15,27 +15,25 @@ const execute = require('./lib/execute');
  * @param {string} safe
  * @return {string}
  */
-module.exports =  (user, appID, safe) => {
-    return new Promise(async (resolve, reject) => {
-        try {
-            // validate user input
-            validateUser(user);
-            // validate appID input
-            validateAppID(appID);
-            // validate safe input
-            validateSafe(safe);
-            // validate platform
-            validatePlatform();
-            // validate executable file
-            validateExe();
-            // set command string
-            const cmd = command(user, appID, safe);
-            // execute shell command
-            const password = await execute(cmd);
-            // return result
-            resolve(password);
-        } catch (error) { 
-            reject(error); 
-        }
-    });
+module.exports =  async (user, appID, safe) => {
+    try {
+        // validate user input
+        validateUser(user);
+        // validate appID input
+        validateAppID(appID);
+        // validate safe input
+        validateSafe(safe);
+        // validate platform
+        validatePlatform();
+        // validate executable file
+        validateExe();
+        // set command string
+        const cmd = command(user, appID, safe);
+        // execute shell command
+        const password = await execute(cmd);
+        // return result
+        return password;
+    } catch (error) { 
+        throw new Error(error); 
+    }
 };
