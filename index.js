@@ -5,7 +5,7 @@ const validateAppID = require('./lib/validate-app-id');
 const validateSafe = require('./lib/validate-safe');
 const validatePlatform = require('./lib/validate-platform');
 const validateExe = require('./lib/validate-exe');
-const command = require('./lib/command');
+// const command = require('./lib/command');
 
 /**
  * Get user password 
