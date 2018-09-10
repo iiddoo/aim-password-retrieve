@@ -3,14 +3,7 @@ const { expect } = require('chai');
 
 describe('Index', ()=> {
     it('Should throw error', done => {
-        async function throwsWithNoArgs() {
-            try {
-                const pwd = await index();
-            } catch (error) {
-                new ErrorThrowingObject(error);
-            }
-        }
-        expect(throwsWithNoArgs).to.throw
+        expect(index()).to.throw
         done()
     });
     it('Should return password', async () => {

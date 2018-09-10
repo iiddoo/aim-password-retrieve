@@ -3,14 +3,7 @@ const { expect } = require('chai');
 
 describe('Get command', ()=> {
     it('Should throw error', done => {
-        function throwsWithNoArgs() {
-            try {
-                command();
-            } catch (error) {
-                new ErrorThrowingObject(error);
-            }
-        }
-        expect(throwsWithNoArgs).to.throw
+        expect(command()).to.throw
         done()
     });
     it('Should return string', () => {
