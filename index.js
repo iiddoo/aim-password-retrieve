@@ -32,14 +32,9 @@ module.exports = (user, appID, safe) => {
             // set command string
             const cmd = command(user, appID, safe);
             // execute shell command
-            execute(cmd)
-            .then((password) => {
-                // return result
-                resolve(password);
-            })
-            .catch((error) => {
-                reject(error);
-            });  
+            const password = execute(cmd);
+            // return result
+            resolve(password); 
         } catch (error) { 
             reject(error);
         }
