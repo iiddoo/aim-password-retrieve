@@ -15,4 +15,3 @@ describe('Validate safe', ()=> {
         expect(validate('safe_name')).to.equal(); 
     });
 });
-

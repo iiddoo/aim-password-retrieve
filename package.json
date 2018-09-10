@@ -1,6 +1,6 @@
 {
   "name": "@iiddoo/aim-password-retrieve",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "description": "Retrieve password for user.",
   "main": "index.js",
   "scripts": {
