@@ -28,10 +28,12 @@ module.exports =  (user, appID, safe) => {
             // validate executable file
             validateExe();
             // set command string
-            //const cmd = command(user, appID, safe);
+            const cmd = command(user, appID, safe);
             // execute shell command with parameters
             // validate result
             resolve('password');
-        } catch (error) { reject(error); }
+        } catch (error) { 
+            reject(error); 
+        }
     });
 };
