@@ -1,11 +1,11 @@
 {
   "name": "@iiddoo/aim-password-retrieve",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "description": "Retrieve password for user.",
   "main": "index.js",
   "scripts": {
     "test": "mocha --reporter spec",
-    "update": "npm version patch -m 'Version %s - add sweet badges'",
+    "update": "npm version patch -m 'Version %s - add badges'",
     "cover": "node_modules/istanbul/lib/cli.js cover node_modules/mocha/bin/_mocha -- -R spec test/*"
   },
   "repository": {

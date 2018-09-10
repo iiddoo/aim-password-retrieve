@@ -9,4 +9,3 @@ describe('Validate executable', ()=> {
         expect(validate()).to.equal(); 
     });
 });
-
