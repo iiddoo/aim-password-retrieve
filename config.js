@@ -13,7 +13,7 @@ module.exports = {
     },
     ubuntu: {
         path: './test.sh',
-        command: ''
+        command: 'sh test.sh'
     },
     testPlatform: {
         path: './test.exe',
