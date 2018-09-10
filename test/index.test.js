@@ -6,11 +6,12 @@ describe('Index', ()=> {
         expect(async () => {
             try {
                 const pwd = await index();
-                done();
+                return pwd;
             } catch (error) {
-                done();
+                throw new Error(error);
             }
         }).to.throw
+        done();
     });
     it('Should return password', async () => {
         const pwd = await index('user', 'my_appID', 'my_safe');
