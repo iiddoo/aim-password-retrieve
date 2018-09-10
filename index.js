@@ -16,7 +16,7 @@ const execute = require('./lib/execute');
  * @return {string}
  */
 module.exports =  (user, appID, safe) => {
-    return new Promise((resolve, reject) => {
+    return new Promise(async (resolve, reject) => {
         try {
             // validate user input
             validateUser(user);
@@ -31,7 +31,7 @@ module.exports =  (user, appID, safe) => {
             // set command string
             const cmd = command(user, appID, safe);
             // execute shell command
-            const password = execute(cmd);
+            const password = await execute(cmd);
             // return result
             resolve(password);
         } catch (error) { 

@@ -11,7 +11,7 @@ describe('Execute', ()=> {
         done()
     });
     it('Should return string', async () => {
-        const result = await execute('cd test/ && sh test.sh');
+        const result = await execute('cd ./ && sh test.sh');
         expect(result).to.be.a('string'); 
     });
 });

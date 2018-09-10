@@ -8,11 +8,11 @@ module.exports = {
         command: ''
     },
     darwin: {
-        path: './test/test.sh',
-        command: 'cd test/ && sh test.sh'
+        path: './test.sh',
+        command: 'sh test.sh'
     },
     ubuntu: {
-        path: './test/test.sh',
+        path: './test.sh',
         command: ''
     },
     testPlatform: {
