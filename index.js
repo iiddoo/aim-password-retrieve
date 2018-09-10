@@ -8,6 +8,11 @@ const validateExe = require('./lib/validate-exe');
 const command = require('./lib/command');
 const execute = require('./lib/execute');
 
+const verify = (user, appID, safe) => {
+    if (!user || !appID || !safe) {
+        throw new Error('One or more parameters missing');
+    }
+}
 /**
  * Get user password 
  * @param {string} user
@@ -19,6 +24,8 @@ const execute = require('./lib/execute');
 module.exports = (user, appID, safe) => {
     return new Promise((resolve, reject) => {
         try {
+            // verify parameters
+            verify(user, appID, safe);
             // validate user input
             validateUser(user);
             // validate appID input
