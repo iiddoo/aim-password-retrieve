@@ -5,7 +5,7 @@ describe('Index', ()=> {
     it('Should throw error', done => {
         expect(async ()=> {
             try {
-                index();
+                index('error');
             } catch (error) {}
         }).to.throw
         done()
