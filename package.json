@@ -21,8 +21,10 @@
   },
   "homepage": "https://github.com/iiddoo/aim-password-retrieve#readme",
   "devDependencies": {
+    "chai": "^4.1.2",
     "coveralls": "^3.0.2",
     "istanbul": "^0.4.5",
     "mocha": "^5.2.0"
-  }
+  },
+  "dependencies": {}
 }
