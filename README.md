@@ -10,7 +10,7 @@ Retrieve password for user
   `npm install @iiddoo/aim-password-retrieve`
 
 ## Usage
-
+```javascript
     const retriever = require('@iiddoo/aim-password-retrieve');
 
     // ES6 async\await
@@ -30,7 +30,7 @@ Retrieve password for user
       .catch((error) => {
         // error handle
       })
-  
+``` 
 
 ## Tests
 
