@@ -10,14 +10,27 @@ Retrieve password for user
   `npm install @iiddoo/aim-password-retrieve`
 
 ## Usage
-
+```javascript
     const retriever = require('@iiddoo/aim-password-retrieve');
 
-    const pwd = retriever('user');
+    // ES6 async\await
+    (async () => {
+      try {
+        const pwd = await retriever('user');
+      } catch (error) {
+        // error handle
+      }
+    })();
 
-  
-  Output should be `password`
-
+    // Promise
+    retriever('user')
+      .then((result) => {
+        const pwd = result;
+      })
+      .catch((error) => {
+        // error handle
+      })
+``` 
 
 ## Tests
 
